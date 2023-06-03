@@ -228,203 +228,159 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Dados da Empresa</h5>
+              <h5 class="card-title">Dados Gerais</h5>
 
               <form class="row g-3">
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <select class="form-select" name="customer_type" id="customer_type" aria-label="Tipo de Cliente">
-                      <option selected></option>
-                      <option value="1">Pessoa Fisíca</option>
-                      <option value="2">Pessoa Juridíca</option>
-                    </select>
-                    <label for="customer_type">Tipo de Cliente</label>
-                  </div>
+                <div class="col-md-2">
+                  <label for="customer_type" class="form-label">Tipo de Cliente</label>
+                  <select class="form-select" name="customer_type" id="customer_type">
+                    <option selected="" disabled="" value=""></option>
+                    <option value="1">Pessoa Fisíca</option>
+                    <option value="2">Pessoa Juridíca</option>
+                  </select>
                 </div>
-
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <select class="form-select" name="status" id="status" aria-label="Situação">
-                      <option selected></option>
-                      <option value="1">Ativo</option>
+                <div class="col-md-2">
+                  <label for="status" class="form-label">Situação</label>
+                  <select class="form-select" name="status" id="status">
+                    <option selected="" disabled="" value=""></option>
+                    <option value="1">Ativo</option>
                       <option value="2">Avaliação</option>
                       <option value="3">Desativado</option>
                       <option value="4">Bloqueado</option>
-                    </select>
-                    <label for="customer_type">Situação</label>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="fantasy_name" id="fantasy_name" placeholder="Nome Fantasia">
-                    <label for="fantasy_name">Nome Fantasia</label>
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="cnpj" id="cnpj" placeholder="CNPJ">
-                    <label for="cnpj">CNPJ</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="corporate_name" name="corporate_name" placeholder="Razão Social">
-                    <label for="corporate_name">Razão Social</label>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="state_registration" id="state_registration" placeholder="Inscrição Estadual">
-                    <label for="state_registration">Inscrição Estadual</label>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="line_of_business" id="line_of_business" placeholder="Ramo de Atividade">
-                    <label for="line_of_business">Ramo de Atividade</label>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="site" id="site" placeholder="Site">
-                    <label for="site">Site</label>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="Telefone">
-                    <label for="phone_number">Telefone</label>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="whatsapp" name="whatsapp" placeholder="Whatsapp">
-                    <label for="whatsapp">Whatsapp</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="responsible" name="responsible" placeholder="Responsável">
-                    <label for="responsible">Responsável</label>
-                  </div>
-                </div>
-
-                <div class="col-md-2">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CEP">
-                    <label for="cpf">CEP</label>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="address" id="address" placeholder="Logradouro">
-                    <label for="address">Logradouro</label>
-                  </div>
+                  </select>
                 </div>
                 <div class="col-md-2">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="number" id="number" placeholder="Número">
-                    <label for="number">Número</label>
-                  </div>
+                  <label for="cnpj" class="form-label">CNPJ</label>
+                  <input type="text" class="form-control" name="cnpj" id="cnpj">
                 </div>
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="complement" id="complement" placeholder="Complemento">
-                    <label for="complement">Complemento</label>
-                  </div>
+                <div class="col-md-6">
+                  <label for="fantasy_name" class="form-label">Nome Fantasia</label>
+                  <input type="text" class="form-control" name="fantasy_name" id="fantasy_name">
                 </div>
 
-                <div class="col-md-5">
-                  <div class="col-md-12">
-                    <div class="form-floating">
-                      <input type="text" class="form-control" name="neighborhood" id="neighborhood" placeholder="Bairro">
-                      <label for="neighborhood">Bairro</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="col-md-12">
-                    <div class="form-floating">
-                      <input type="text" class="form-control" name="city" id="city" placeholder="Cidade">
-                      <label for="city">Cidade</label>
-                    </div>
-                  </div>
+                <div class="col-md-6">
+                  <label for="corporate_name" class="form-label">Razão Social</label>
+                  <input type="text" class="form-control" name="corporate_name" id="corporate_name">
                 </div>
                 <div class="col-md-2">
-                  <div class="form-floating mb-3">
-                    <select class="form-select" name="uf" id="uf" aria-label="UF">
-                      <option selected>AM</option>
-                      <option value="1">SP</option>
-                      <option value="2">RJ</option>
-                    </select>
-                    <label for="uf">UF</label>
-                  </div>
+                  <label for="state_registration" class="form-label">Inscrição Estadual</label>
+                  <input type="text" class="form-control" name="state_registration" id="state_registration">
+                </div>
+                <div class="col-md-4">
+                  <label for="line_of_business" class="form-label">Ramo de Atividade</label>
+                  <input type="text" class="form-control" name="line_of_business" id="line_of_business">
                 </div>
 
-                <div>
-                  <h3 class="card-title">Dados do Responsável</h3>
+                <h5 class="card-title-form">Endereço</h5>
+
+                <div class="col-md-2">
+                  <label for="cep" class="form-label">CEP</label>
+                  <input type="text" class="form-control" name="cep" id="cep">
+                </div>
+                <div class="col-md-5">
+                  <label for="address" class="form-label">Logradouro</label>
+                  <input type="text" class="form-control" name="address" id="address">
+                </div>
+                <div class="col-md-1">
+                  <label for="number" class="form-label">Nº</label>
+                  <input type="text" class="form-control" name="number" id="number">
+                </div>
+                <div class="col-md-4">
+                  <label for="complement" class="form-label">Complemento</label>
+                  <input type="text" class="form-control" name="complement" id="complement">
                 </div>
 
                 <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="responsible_cpf" id="responsible_cpf" placeholder="CPF">
-                    <label for="responsible_cpf">CPF</label>
-                  </div>
+                  <label for="neighborhood" class="form-label">Bairro</label>
+                  <input type="text" class="form-control" name="neighborhood" id="neighborhood">
                 </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="responsible_name" name="responsible_name" placeholder="Nome">
-                    <label for="responsible_name">Nome</label>
-                  </div>
+                <div class="col-md-4">
+                  <label for="city" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" name="city" id="city">
                 </div>
-                <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="job_position" id="job_position" placeholder="Cargo">
-                    <label for="job_position">Cargo</label>
-                  </div>
+                <div class="col-md-1">
+                  <label for="uf" class="form-label">UF</label>
+                  <select class="form-select" name="uf" id="uf">
+                    <option selected="" disabled="" value=""></option>
+                    <option value="1">AM</option>
+                    <option value="2">SP</option>
+                  </select>
+                </div>
+                <div class="col-md-4"></div>
+
+                <h5 class="card-title-form">Contatos</h5>
+
+                <div class="col-md-2">
+                  <label for="phone_number" class="form-label">Telefone</label>
+                  <input type="text" class="form-control" name="phone_number" id="phone_number">
+                </div>
+                <div class="col-md-2">
+                  <label for="whatsapp" class="form-label">Whatsapp</label>
+                  <input type="text" class="form-control" name="whatsapp" id="whatsapp">
+                </div>
+                <div class="col-md-4">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" name="email" id="email">
+                </div>
+                <div class="col-md-4">
+                  <label for="site" class="form-label">Site</label>
+                  <input type="text" class="form-control" name="site" id="site">
                 </div>
 
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" name="responsible_email" id="responsible_email" placeholder="Email">
-                    <label for="responsible_email">Email</label>
-                  </div>
+                <div class="col-md-3">
+                  <label for="instagram" class="form-label">Instagram</label>
+                  <input type="text" class="form-control" name="instagram" id="instagram">
                 </div>
                 <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="responsible_phone" id="responsible_phone" placeholder="Telefone">
-                    <label for="responsible_phone">Telefone</label>
-                  </div>
+                  <label for="facebook" class="form-label">Facebook</label>
+                  <input type="text" class="form-control" name="facebook" id="facebook">
                 </div>
                 <div class="col-md-3">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" name="responsible_whatsapp" id="responsible_whatsapp" placeholder="Whatsapp">
-                    <label for="responsible_whatsapp">Whatsapp</label>
-                  </div>
+                  <label for="twitter" class="form-label">Twitter</label>
+                  <input type="text" class="form-control" name="twitter" id="twitter">
+                </div>
+                <div class="col-md-3">
+                  <label for="youtube" class="form-label">Youtube</label>
+                  <input type="text" class="form-control" name="youtube" id="youtube">
                 </div>
                 
-                <div>
-                  <h3 class="card-title">Observações Adicionais</h3>
+                <h5 class="card-title-form">Responsável</h5>
+
+                <div class="col-md-2">
+                  <label for="responsible_cpf" class="form-label">CPF</label>
+                  <input type="text" class="form-control" name="responsible_cpf" id="responsible_cpf">  
+                </div>
+                <div class="col-md-6">
+                  <label for="responsible_name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" name="responsible_name" id="responsible_name">  
+                </div>
+                <div class="col-md-2">
+                  <label for="responsible_phone_number" class="form-label">Telefone</label>
+                  <input type="text" class="form-control" name="responsible_phone_number" id="responsible_phone_number">  
+                </div>
+                <div class="col-md-2">
+                  <label for="responsible_whatsapp" class="form-label">Whatsapp</label>
+                  <input type="text" class="form-control" name="responsible_whatsapp" id="responsible_whatsapp">  
+                </div>
+
+
+                <div class="col-md-5">
+                  <label for="responsible_email" class="form-label">Email</label>
+                  <input type="text" class="form-control" name="responsible_email" id="responsible_email">  
+                </div>
+
+                
+                <div class="col-md-3">
+                  <label for="job_position" class="form-label">Cargo</label>
+                  <input type="text" class="form-control" name="job_position" id="job_position">  
                 </div>
 
                 <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control" name="observations" id="observations" placeholder="Observações" style="height: 100px;"></textarea>
-                    <label for="observations">Observações</label>
-                  </div>
+                  <label for="observations" class="form-label">Observações</label>
+                  <textarea class="form-control" name="observations" id="observations" placeholder="Observações" style="height: 100px;"></textarea>
                 </div>
 
-                <div class="text-center">
+                <div class="text-center pt-3 pb-3">
                   <button type="submit" class="btn btn-primary">Cadastrar</button>
                   <button type="reset" class="btn btn-secondary">Cancelar</button>
                 </div>
@@ -439,6 +395,17 @@
 
   </main>
   <!-- /Main -->
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Footer -->
   <footer id="footer" class="footer">

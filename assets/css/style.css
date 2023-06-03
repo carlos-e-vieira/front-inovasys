@@ -1231,3 +1231,32 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+/*--------------------------------------------------------------
+# Classes Customizadas
+--------------------------------------------------------------*/
+.form-select {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+}
+
+.form-label {
+  font-size: 15px;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-control {
+  padding: 4px;
+  font-size: 14px;
+}
+
+.card-title-form {
+  padding: 28px 0 15px 8px;
+  margin-bottom: -10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+}
